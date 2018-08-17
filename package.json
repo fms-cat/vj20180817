@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "webpack-serve",
-    "build": "webpack"
+    "go": "webpack-serve",
+    "build": "webpack",
+    "h": "http-server dist"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
