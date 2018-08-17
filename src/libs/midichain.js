@@ -22,7 +22,7 @@ const MidiChain = class {
 
     window.addEventListener( 'wheel', ( event ) => {
       if ( this.learning && this.params[ this.learning ] ) {
-        this.params[ this.learning ].raw = Math.min( Math.max( this.params[ this.learning ].raw + 0.001 * event.deltaY, 0.0 ), 1.0 );
+        this.params[ this.learning ].raw = Math.min( Math.max( this.params[ this.learning ].raw - 0.001 * event.deltaY, 0.0 ), 1.0 );
         this.__updateDOM();
       }
     } );
