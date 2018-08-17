@@ -72,7 +72,7 @@ let perspFar = 100.0;
 
 let lightPos = [ 0.0, 10.0, 10.0 ]; // this is pretty random
 
-const shadowReso = 4096; // texture size for shadow buffer
+const shadowReso = CONFIG.shadowReso; // texture size for shadow buffer
 
 let matP = MathCat.mat4Perspective( perspFov, perspNear, perspFar );
 let matV = MathCat.mat4LookAt( cameraPos, cameraTar, [ 0.0, 1.0, 0.0 ], cameraRoll );
