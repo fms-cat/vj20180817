@@ -2,7 +2,7 @@
 
 #define saturate(i) clamp(i,0.,1.)
 
-#define BOKEH_ITER 100
+#define BOKEH_ITER 10
 #define BOKEH_ANGLE 2.39996
 #define BOKEH_RADIUS_MAX (resolution.x / 64.0)
 

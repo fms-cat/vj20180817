@@ -39,8 +39,8 @@ export default ( context ) => {
 
         glCat.uniformTexture( 'samplerShadow', params.textureShadow || textureDummy, 2 );
 
-        for ( let i = 0; i < 10; i ++ ) {
-          const z = UltraCat.lerp( -1.0, 1.0, i / 9.0 );
+        for ( let i = 0; i < 5; i ++ ) {
+          const z = UltraCat.lerp( -1.0, 1.0, i / 4.0 );
 
           let matM = MathCat.mat4Identity();
           matM = MathCat.mat4Apply( MathCat.mat4ScaleXYZ( 3.0 ), matM );

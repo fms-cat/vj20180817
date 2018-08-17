@@ -5,7 +5,17 @@
   "tasks": [
     {
       "type": "npm",
-      "script": "serve",
+      "script": "go",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "h",
       "problemMatcher": []
     }
   ]

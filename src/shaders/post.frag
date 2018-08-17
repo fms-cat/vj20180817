@@ -1,4 +1,4 @@
-#define BARREL_ITER 20
+#define BARREL_ITER 10
 
 #define HUGE 9E16
 #define PI 3.14159265

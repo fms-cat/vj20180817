@@ -50,13 +50,13 @@ void main() {
 
   valid = valid || (
     abs( abs( p.y ) - 0.5 ) < 0.02 &&
-    sin( 100.0 * ( time * 0.4 * sign( p.y ) + p.x + p.y ) ) < 0.7
+    sin( 100.0 * ( time * 0.1 * sign( p.y ) + p.x + p.y ) ) < 0.7
   );
   valid = valid || (
-    0.7 < sin( 400.0 * ( -time * sign( p.y ) + p.x ) ) && (
+    0.7 < sin( 400.0 * ( -time * 0.3 * sign( p.y ) + p.x ) ) && (
       abs( abs( p.y ) - 0.45 ) < 0.01 || (
         abs( abs( p.y ) - 0.45 ) < 0.02 &&
-        0.94 < sin( 40.0 * ( -time * sign( p.y ) + p.x ) )
+        0.94 < sin( 40.0 * ( -time * 0.3 * sign( p.y ) + p.x ) )
       )
     )
   );
