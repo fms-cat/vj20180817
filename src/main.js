@@ -295,7 +295,6 @@ const update = () => {
   } );
   glCatPath.render( 'paneFront', {
     target: glCatPath.fb( 'target' ),
-    textureShadow: glCatPath.fb( 'shadow' ).texture,
     width: width,
     height: height
   } );
